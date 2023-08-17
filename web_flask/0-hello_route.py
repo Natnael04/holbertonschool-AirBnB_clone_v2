@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-# Create a Flask web app
+"""Create a Flask web app.
+"""
 from flask import Flask
 
 app = Flask(__name__)

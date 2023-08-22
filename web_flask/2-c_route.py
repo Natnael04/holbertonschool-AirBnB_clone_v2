@@ -13,14 +13,13 @@ def hello():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def about():
+def hbnb():
     return 'HBNB'
 
 
-@app.route('/c/hi', strict_slashes=False)
-def index():
-    text_variable = "C"
-    return (text_variable)
+@app.route('/c/<text>', strict_slashes=False)
+def c_text(text):
+    return "C %s" % text.replace('_', ' ')
 
 
 if __name__ == '__main__':
